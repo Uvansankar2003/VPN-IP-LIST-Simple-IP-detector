@@ -25,6 +25,8 @@ Feed the vpn-ipv4.txt file and/or the vpn-ipv6.txt file to your firewall or appl
 # Python 
 i have created a simple Python program to check if the IP is VPN or not .
 
+# Extras
+
 For extra effectiveness, consider supplementing this list with blocklists for recently abusive IPs, as these invariably include many VPNs, and lists of open proxies/tor nodes. You should be able to find everything you need in that regard at http://iplists.firehol.org. At the very least, consider using firehol_level1, firehol_level2, firehol_abusers_1d, and firehol_proxies with this list, depending on your needs.
 
 Before implementing, consider that this list probably includes your own server's IP range, that of your DNS server, the server you get your software updates from, and the servers common search engines live on. Take a moment to make sure you don't accidentally use it to block network traffic you need. In a web application, you might want these IPs to GET, but not POST. In a firewall, you might want to block access to a specific port, but allow these IPs otherwise.
